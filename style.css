@@ -4,12 +4,6 @@ body {
     display: block;
 }
 
-header {
-    background-color: #0f0;
-    justify-content: center;
-    width: 100%;
-}
-
 aside {
     background-color: #ff0;
 }
@@ -41,10 +35,9 @@ section {
 .subscribeBtn {
     background-color: #6288A5;
     padding: 10px 0px 10px 0px;
-    width: 250px;
+    width: 240px;
     color: white;
-    position: relative;
-    right: 100px;
+    max-height: 40px;
 }
 
 .signBtn {
@@ -52,38 +45,53 @@ section {
     padding: 10px 0px 10px 0px;
     width: 80px;
     color: white;
-    position: relative;
-    right: 10px;
+    max-height: 40px;
+    margin: 0px 10px;
 }
 
-.mainLogo {
+.logoDimension {
     height: auto;
     width: 250px;
-    position: relative;
-    left: 30vh;
 }
 
 .fa-bars {
-    justify-content: space-around;
     left: 10px;
     position: relative;
-    float: left;
+    padding: 10px 0px 10px 0px;
 }
 
 .fa-search {
-    left: 30px;
     position: relative;
-    justify-self: flex-start;
-    float: left;
+    left: 30px;
+    padding: 10px 0px 10px 0px;
 }
 
 .navigationBar {
-    display: inline-flex;
-    justify-content: space-between;
-    align-content: flex-start;
+    display: grid;
+    grid-auto-columns: 1fr 2fr 1fr;
+    grid-auto-columns: 1fr;
     width: 100%;
+    height: 60px;
 }
 
-.pullRight {
-    justify-self: flex-end;
+.navRight {
+    grid-column-start: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 10px;
+}
+
+.navLeft {
+    grid-column-start: 1;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+.navCenter {
+    grid-column-start: 2;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
