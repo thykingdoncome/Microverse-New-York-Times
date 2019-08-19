@@ -1,0 +1,90 @@
+html,
+body {
+    background-color: #dedede;
+    display: block;
+}
+
+header {
+    background-color: #0f0;
+    justify-content: center;
+    width: 100%;
+}
+
+aside {
+    background-color: #ff0;
+}
+
+article {
+    background-color: #f00;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.leftAside {
+    background-color: #ff0;
+    height: 100vh;
+    width: 50px;
+    float: right;
+}
+
+.rightAside {
+    background-color: #ff0;
+    height: 100vh;
+    width: 50px;
+    float: right;
+}
+
+.subscribeBtn {
+    background-color: #6288A5;
+    padding: 10px 0px 10px 0px;
+    width: 250px;
+    color: white;
+    position: relative;
+    right: 100px;
+}
+
+.signBtn {
+    background-color: #6288A5;
+    padding: 10px 0px 10px 0px;
+    width: 80px;
+    color: white;
+    position: relative;
+    right: 10px;
+}
+
+.mainLogo {
+    height: auto;
+    width: 250px;
+    position: relative;
+    left: 30vh;
+}
+
+.fa-bars {
+    justify-content: space-around;
+    left: 10px;
+    position: relative;
+}
+
+.fa-search {
+    justify-content: space-around;
+    left: 30px;
+    position: relative;
+}
+
+.navigationBar {
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.pullRight {
+    float: right;
+    justify-self: flex-end;
+    position: relative;
+    right: 300px;
+}
