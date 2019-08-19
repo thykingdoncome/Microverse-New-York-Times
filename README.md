@@ -12,7 +12,7 @@ All the code required to get started
 # Final Product (Sample)
 
 Current version of NYT as commit date
-![alt text](http://url/to/img.png)
+![alt text](https://user-images.githubusercontent.com/9586665/63277788-a3d11f00-c2ae-11e9-8408-c87b6568d14d.png)
 
 # Contributing
 ***
