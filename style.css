@@ -67,12 +67,14 @@ section {
     justify-content: space-around;
     left: 10px;
     position: relative;
+    float: left;
 }
 
 .fa-search {
-    justify-content: space-around;
     left: 30px;
     position: relative;
+    justify-self: flex-start;
+    float: left;
 }
 
 .navigationBar {
@@ -83,8 +85,5 @@ section {
 }
 
 .pullRight {
-    float: right;
     justify-self: flex-end;
-    position: relative;
-    right: 300px;
 }
