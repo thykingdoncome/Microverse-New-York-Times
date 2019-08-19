@@ -161,7 +161,7 @@ body {
     padding: 0px 5px;
 }
 
-.content>a {
+.content>h4 {
     text-decoration: none;
     color: black;
 }
