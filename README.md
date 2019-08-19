@@ -21,3 +21,9 @@ To get started...
 🍴 Fork this repo!
 ## Option 2
 👯 Clone this repo to your local machine using https://github.com/kilonzi/Microverse-New-York-Times.git
+
+
+# Team
+***
+1. Azemoh David  [https://github.com/thykingdoncome]
+2. John Kilonzi [https://github.com/kilonzi]
