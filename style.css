@@ -4,6 +4,115 @@ body {
     display: block;
 }
 
+body i,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navigationBar {
+    display: flex;
+    align-items: center;
+    max-width: 1612px;
+    height: 36px;
+    margin: 0 auto;
+    padding: 4px 10px 2px;
+}
+
+.readTitle {
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    padding-left: 20px;
+}
+
+.navRight {
+    align-self: flex-start;
+}
+
+.navLeft {
+    grid-column-start: 1;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+.navCenter {
+    flex: 1;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.allContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+.title {
+    max-width: 500px;
+    margin: 70px auto 40px;
+}
+
+.titleInfo {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.titleImg {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.cosmosImage {
+    max-width: 100%;
+}
+
+.media {
+    max-width: 600px;
+    margin: 3em auto;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials p{
+    width: 120px;
+    margin-right: auto;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.socials i {
+    font-size: 2em;
+     margin-right: 15px;
+     transition:0.7s;
+}
+
+.socials i:hover{
+    color: red;
+}
+
 .leftAside {
     background-color: #f0f0f0;
     grid-column-start: 1;
@@ -66,91 +175,54 @@ body {
     padding: 10px 0px 10px 0px;
 }
 
-.navigationBar {
-    display: grid;
-    grid-auto-columns: 1fr 2fr 1fr;
-    grid-auto-columns: 1fr;
-    width: 100%;
-    height: 60px;
-    padding: 0px;
-    margin: 0px;
-    position: fixed;
-    top: 0;
-    border-bottom: 1px solid #326891;
-}
-
-.navRight {
-    grid-column-start: 3;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    padding: 10px;
-}
-
-.navLeft {
-    grid-column-start: 1;
-    justify-content: left;
-    align-items: center;
-    padding: 10px;
-}
-
-.navCenter {
-    grid-column-start: 2;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.navLeft a {
-    display: block;
-    position: absolute;
-    left: 105px;
-    line-height: 19px;
-    top: 10px;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-.allContent {
-    display: grid;
-    background-color: white;
-    grid-template-columns: repeat(25, 1fr);
-    position: relative;
-    top: 60px;
-    width: 100%;
-    height: 100vh;
-    padding: 0px;
-    margin: 0px;
-    border-bottom: 1px solid #326891;
-    font-weight: 300;
-}
-
-.cosmosImage {
-    height: auto;
-    max-width: 100%;
-    min-width: 600px;
-}
-
-.headerInfo {
-    height: auto;
-    max-width: 100%;
-    grid-column-start: 6;
-    grid-column-end: 15;
-}
-
 .initialContent {
     grid-column-start: 3;
     grid-column-end: 22;
 }
 
 .content {
-    grid-column-start: 8;
-    grid-column-end: 19;
-    font-size: 17px;
-    font-weight: 400;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    /* font-family: Georgia, 'Times New Roman', Times, serif ; */
 }
 
+.content p{
+    grid-column: 2;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.bold{
+    font-weight: bolder; 
+}
+
+.content p a {
+    text-decoration: underline;
+    color: rgb(64, 64, 211);
+    transition: .7s
+}
+
+.content p a:hover {
+    text-decoration: none;
+}
+
+.unlock{
+   max-width: 600px; 
+   margin: 0 auto;
+   text-align: center;
+   font-weight: bolder;
+}
+
+.unlock hr{
+    width: 60px;
+    margin: 1.5em auto;
+}
+
+.unlock a {
+    color: #326891;
+}
+
+/* 
 .articleActions {
     display: inline;
     justify-content: space-evenly;
@@ -159,7 +231,7 @@ body {
 .articleActions>i {
     display: inline;
     padding: 0px 5px;
-}
+} */
 
 .content>h4 {
     text-decoration: none;
