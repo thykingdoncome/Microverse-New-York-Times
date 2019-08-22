@@ -23,6 +23,10 @@ header {
     left: 0;
 }
 
+button:hover{
+    background: #073d66
+}
+
 .navigationBar {
     display: flex;
     align-items: center;
@@ -106,10 +110,11 @@ header {
     font-size: 2em;
     margin-right: 15px;
     transition: 0.7s;
+    color: #326891;
 }
 
-.socials i:hover {
-    color: red;
+ i:hover {
+    color: #073d66
 }
 
 .leftAside {
@@ -246,6 +251,10 @@ iframe {
     border: none;
 }
 
+.media2 button:hover{
+    background: #073d66;
+}
+
 .afterArticle1 {
     max-width: 1200px;
     margin: 50px auto;
@@ -255,47 +264,116 @@ iframe {
     grid-column-gap: 30px;
 }
 
-.after1 {}
+.after1 {
+    grid-column: 1;
+    border-top: 1px solid #000;
+    max-width: 850px;
+}
 
-.after2 {}
+.hot {
+    grid-column: 2;
+    grid-row: 1/3;
+    width: 100%;
+    border-top: 1px solid #000;
+}
 
-.hot {}
+.hot ul{
+    padding-left: 0;
+    font-size: 18px;
+    list-style-type: none;
+}
 
-.afterArticle2 {}
+.hot ul li{
+    padding: 15px 0;
+    border-top: 1px solid #e2e2e2;
+}
 
-.newsHead {}
+.hot ul li a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+}
 
-.menu {}
+.opening{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+}
 
-
-/* 
-
-
-.moreCategory {
+.otherNews{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
 }
 
-.moreGrid {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.otherNews img{
+    width: 100%;
+    cursor: pointer;
 }
 
-*/
+.otherNews figcaption{
+    font-size: 11px;
+    color: #888;
+    text-align: right;
+    cursor: pointer;
+    max-width: 850px;
+}
 
+.afterArticle2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
 
-/* .moreDetails {
-    width: 200px;
-    height: 150px;
-} */
+.newsHead {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsHead a{
+    color: #326891;
+}
+
+.belowLinks{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3em;
+}
 
 .footer_area {
-    width: 70%;
+    width:100% ;
     float: left;
+    margin: 0 auto;
 }
 
 .footer_links {
     float: left;
     width: 20%;
+}
+
+.footer_links li {
+    margin: 1em 0;
+}
+
+.footer_links li a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 5px 0;
+    padding-left: 0;
 }
