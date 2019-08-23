@@ -220,6 +220,8 @@ i:hover {
 
 iframe {
     width: 100%;
+    height: 100%;
+    min-height: 415px;
 }
 
 .vid {
@@ -348,9 +350,11 @@ iframe {
 }
 
 .footer_area {
-   width: 100%;
+    width: 100%;
     float: left;
     margin: 0 auto;
+    font-size: 12px;
+    font: 300;
 }
 
 .footer_links {
@@ -367,18 +371,17 @@ iframe {
 }
 
 footer {
-     /* max-width: 1200px;  */
-    margin: 0 auto;
+    margin-left: 0 auto;
     display: inline-flex;
-    text-align: center
+    text-align: center;
+    justify-content: center;
+    width: 100%;
 }
 
 footer ul {
     display: inline-flex;
     flex-wrap: wrap;
     list-style-type: none;
-    /* margin: 20px 0; */
-    padding-left: 50px;
     width: 100%;
 }
 
@@ -388,7 +391,7 @@ footer ul li {
 
 .footer_side {
     border-left: 2px solid gray;
-    padding:0 2em;
+    padding: 0 2em;
 }
 
 .ass1 {
@@ -403,7 +406,7 @@ footer ul li {
     width: 100%;
     color: #fff;
     border-radius: 3px;
-    font-weight: 700; 
+    font-weight: 700;
     letter-spacing: 0.5px;
     padding: 8.5px 10px;
     margin-right: 7px;
@@ -413,14 +416,15 @@ footer ul li {
     font-size: 13px;
 }
 
-.ass2{
+.ass2 {
     grid-column: 3;
     grid-row: 1/10;
     max-width: 210px;
-    margin: 0 0 0 5em;;
+    margin: 0 0 0 5em;
+    ;
 }
 
-.ass2 p{
+.ass2 p {
     font-size: 14px;
     font-weight: 900;
     color: #000;
@@ -429,7 +433,7 @@ footer ul li {
     margin-bottom: 15px;
 }
 
-.ass2 a{
+.ass2 a {
     display: flex;
     align-items: center;
     color: #222;
@@ -437,21 +441,46 @@ footer ul li {
     margin-bottom: 10px;
 }
 
-.ass2 img{
+.ass2 img {
     width: 75px;
 }
 
-.ass2 span{
+.ass2 span {
     font-size: 13px;
     margin: 5px 0 5px 10px;
 }
 
 .footerLinks {
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
-.footerLinks li {
-    padding-left: 5px;
+.footerExtra li {
+    padding-left: 10px;
+    font-size: 11px;
+    font: 200;
 }
 
+footer hr {
+    display: block;
+    width: 1200px;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.footerExtra {
+    display: block;
+}
+
+.footerSVG {
+    height: 13px;
+    width: 13px;
+    padding-right: 5px;
+    padding-top: 1px;
+}
