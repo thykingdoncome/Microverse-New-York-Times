@@ -371,7 +371,7 @@ iframe {
 }
 
 footer {
-    margin-left: 0 auto;
+    margin-left: 0;
     display: inline-flex;
     text-align: center;
     justify-content: center;
@@ -465,10 +465,9 @@ footer hr {
     display: block;
     width: 1200px;
     unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin: auto;
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
